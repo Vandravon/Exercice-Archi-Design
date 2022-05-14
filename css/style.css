@@ -1,0 +1,788 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ededed;
+    color: #414141;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+}   
+/* FONTS */
+h1, h2, .header-boxright, .middle-title, .middle-box-title, .bot-title {
+    font-family: 'Fjalla One', sans-serif;
+}
+h1 {
+    color: #00748D;
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+    color: #CB8606;
+}
+
+
+/**************************************
+HEADER
+**************************************/
+.header-bigbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(../images/path.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-color: #00748D;
+}
+.header-boxleft {
+    margin: 45px 20px;
+    color: white;
+    width: 40%;
+}
+
+ /* NAV */
+
+.header-boxright {
+    white-space: nowrap;
+}
+.header-boxright ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 50px 10px;
+    font-size: 20px;
+}
+.nav-first {
+    text-decoration: none;
+    background-color: white;
+    color: #00748D;
+    padding: 10px 15px;
+}
+.nav-others {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+.nav-others:hover {
+    background-color: white;
+    color: #00748D;
+}
+
+
+/**********************************
+Background top of the page
+**********************************/
+
+.background-top {
+    background-image: url(../images/bg-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 10rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.background-top h2 {
+    background-color: #CB8606;
+    padding: 15px 40px;
+    color: white;
+    margin: 30px;
+}
+.background-top p {
+    padding: 5px 20px;
+    background-color: white;
+    color: #00748D;
+    margin: 30px;
+}
+
+
+/**********************************************************
+LAYOUT
+**********************************************************/
+.grid-home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1%;
+    grid-template-areas:
+    "mid-title mid-title mid-title mid-title"
+    "mid-box1 mid-box2 mid-box3 mid-box4"
+    "bot-title bot-title bot-title bot-title"
+    "bot-box1 bot-box2 bot-box3 bot-box4";
+    text-align: center;
+}
+
+/**********************************************************
+INSIDE THE GRID
+**********************************************************/
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.middle-title {
+    grid-area: mid-title;
+}
+.middle-title h3 {
+    display: inline-block;
+    line-height: 6em;
+    /* style inside html for the text */
+}
+
+.middle-box-icon {
+    display: inline-block;
+    background-color: #CB8606;
+    padding: 15px;
+    color: white;
+}
+.middle-box-title p {
+    display: inline-block;
+    padding: auto;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.middle-box-text {
+    text-align: left;
+}
+.middle-box-button a {
+    line-height: 4rem;
+    background-color: #00748D;
+    color: white;
+    padding: 5px 30px;
+    text-decoration: none;
+}
+.middle-box-button a:hover {
+    background-color: white;
+    color: #00748D;
+    border: 1px solid #00748D;
+}
+.middle-box1 {
+    grid-area: mid-box1;
+}
+.middle-box2 {
+    grid-area: mid-box2;
+}
+.middle-box3 {
+    grid-area: mid-box3;
+}
+.middle-box4 {
+    grid-area: mid-box4;
+}
+
+.bot-title {
+    grid-area: bot-title;
+}
+.bot-title h3 {
+    display: inline-block;
+    line-height: 6em;
+    /* style inside html for the text */
+}
+.bot-box1 {
+    grid-area: bot-box1;
+    border: 1px solid #00748D;
+    width: 100%;
+}
+.bot-box2 {
+    grid-area: bot-box2;
+    border: 1px solid #00748D;
+    width: 100%;
+}
+.bot-box3 {
+    grid-area: bot-box3;
+    border: 1px solid #00748D;
+    width: 100%;
+}
+.bot-box4 {
+    grid-area: bot-box4;
+    border: 1px solid #00748D;
+    width: 100%;
+}
+
+/*************************************
+FOOTER
+*************************************/
+
+.footer-bigbox {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(../images/path.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-color: #00748D;
+}
+.footer-boxleft {
+    margin: 2% 8%;
+    color: white;
+}
+.footer-boxright {
+    margin: 2% 8%;
+}
+.footer-boxright a {
+    padding: 0 10px;
+    color: white;
+}
+.footer-boxright a:hover {
+    color: #CB8606;
+}
+
+
+
+
+
+
+
+/****************************************
+*****************************************
+*****************************************
+
+ACTUALITES
+
+*****************************************
+*****************************************
+****************************************/
+
+
+
+/**********************************************************
+LAYOUT
+**********************************************************/
+.grid-news {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 150px 100px 500px 100px 500px;
+    gap: 10px;
+    grid-template-areas:
+    "n-maintitle n-maintitle n-ttitle"
+    "n-mtitle1 n-mtitle1 n-testi"
+    "n-img1 n-desc1 n-testi"
+    "n-mtitle2 n-mtitle2 n-titletw"
+    "n-img2 n-desc2 n-tweet";
+    margin: 0 50px;
+}
+
+
+
+.news-main-title {
+    grid-area: n-maintitle;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*****************************
+LEFT SIDE
+*****************************/
+
+.news-middle-title1 {
+    grid-area: n-mtitle1;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.news-image1 {
+    grid-area: n-img1;
+    text-align: center;
+}
+.news-image1 img {
+    width: 100%;
+}
+.news-description1 {
+    grid-area: n-desc1;
+}
+.news-description1 p {
+    margin: 0 10px 20px 10px;
+}
+.news-more-button a {
+    margin: 10px;
+    line-height: 4rem;
+    background-color: #00748D;
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+.news-more-button a:hover {
+    background-color: white;
+    color: #00748D;
+    border: 1px solid #00748D;
+}
+.news-middle-title2 {
+    grid-area: n-mtitle2;
+    display: block;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.news-image2 {
+    grid-area: n-img2;
+    text-align: center;
+}
+.news-image2 img {
+    width: 100%;
+}
+.news-description2 {
+    grid-area: n-desc2;
+}
+.news-description2 p {
+    margin: 0 10px 20px 10px;
+}
+.news-description2 a {
+    margin: 10px;
+}
+
+/********************************
+RIGHT SIDE
+********************************/
+
+
+.news-testimony-title {
+    grid-area: n-ttitle;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+.news-testimony-main {
+    grid-area: n-testi;
+    overflow: scroll;
+    margin-bottom: 90px;
+}
+.news-testimony-flex {
+    display: flex;
+    margin: 0 20px;
+}
+.news-testimony-flex img {
+    padding: 0 20px;
+}
+.news-clients {
+    font-style: italic;
+    color: #00748D;
+    margin: 5px;
+}
+.news-testimony-separate {
+    margin: 20px auto;
+    width: 40%;
+    border: 1px solid #CB8606;
+}
+
+.news-tweets-title {
+    grid-area: n-titletw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.news-tweets {
+    grid-area: n-tweet;
+    margin: 20px;
+    list-style: url("../images/circle.png");
+    list-style-position: inside;
+}
+.news-tweets li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 2rem;
+}
+
+
+/*****************************************
+******************************************
+REALISATION
+******************************************
+*****************************************/
+
+.grid-real {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 400px;
+    grid-template-rows: repeat(6, 130px) 250px;
+    gap: 10px;
+    grid-template-areas:
+    "rmaint rmaint rmaint rmaint n-ttitle"
+    "bed1 lamp1 flowr cact n-testi"
+    "lamp2 sof1 flowr kit1 n-testi"
+    "lamp2 kit2 bed2 kit3 n-testi"
+    "liv1 sofa2 liv2 kit3 n-titletw"
+    "offi1 sofa2 chair offi2 n-tweet"
+    ". . . . n-tweet";
+    margin: 0 50px;
+}
+
+.real-main-title {
+    grid-area: rmaint;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.real-images {
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #00748D;
+}
+/* .real-small-image {
+    height: 100%;
+    width: 100%;
+}
+.real-big-image {
+    height: 270;
+    width: 200px;
+} */
+
+.bedroom1 {
+    background-image: url(../images/gallery/bedroom1.jpg);
+    grid-area: bed1;
+}
+.lamp1 {
+    background-image: url(../images/gallery/lamp-1.jpg);
+    grid-area: lamp1;
+}
+.flowers {
+    background-image: url(../images/gallery/deco-2.jpg);
+    grid-area: flowr;
+}
+.cactus {
+    background-image: url(../images/gallery/deco-1.jpg);
+    grid-area: cact;
+}
+.kitchen1 {
+    background-image: url(../images/gallery/kitchen-1.jpg);
+    grid-area: kit1;
+}
+.lamp2 {
+    background-image: url(../images/gallery/lamp-2.jpg);
+    grid-area: lamp2;
+}
+.sofa1 {
+    background-image: url(../images/gallery/living-room-1.jpg);
+    grid-area: sof1;
+}
+.kitchen2 {
+    background-image: url(../images/gallery/kitchen-3.jpg);
+    grid-area: kit2;
+}
+.bedroom2 {
+    background-image: url(../images/gallery/bedroom2.jpg);
+    grid-area: bed2;
+}
+.kitchen3 {
+    background-image: url(../images/gallery/kitchen-2.jpg);
+    grid-area: kit3;
+}
+.living1 {
+    background-image: url(../images/gallery/deco-3.jpg);
+    grid-area: liv1;
+}
+.office1 {
+    background-image: url(../images/gallery/office-2.jpg);
+    grid-area: offi1;
+}
+.sofa2 {
+    background-image: url(../images/gallery/living-room-4.jpg);
+    grid-area: sofa2;
+}
+.living2 {
+    background-image: url(../images/gallery/living-room-2.jpg);
+    grid-area: liv2;
+}
+.chair {
+    background-image: url(../images/gallery/living-room-3.jpg);
+    grid-area: chair;
+}
+.office2 {
+    background-image: url(../images/gallery/office-1.jpg);
+    grid-area: offi2;
+}
+
+.real-news-testimony-main {
+    margin-bottom: 0;
+}
+
+
+/*****************************************
+Responsive
+*****************************************/
+
+@media (max-width: 1100px) and (min-width: 781px) {
+    .grid-home {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "mid-title mid-title"
+        "mid-box1 mid-box2"
+        "mid-box3 mid-box4"
+        "bot-title bot-title"
+        "bot-box1 bot-box2"
+        "bot-box3 bot-box4";
+    }
+
+    .grid-news {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 100px 100px 450px 250px 100px 450px 250px 50px 200px;
+        gap: 20px;
+        grid-template-areas:
+        "n-maintitle n-maintitle"
+        "n-mtitle1 n-mtitle1"
+        "n-img1 n-img1"
+        "n-desc1 n-desc1"
+        "n-mtitle2 n-mtitle2"
+        "n-img2 n-img2"
+        "n-desc2 n-desc2"
+        "n-ttitle n-titletw"
+        "n-testi n-tweet";
+    }
+     .news-tweets-title {
+        align-items: center;
+    }
+    .news-testimony-main {
+        margin: 20px 0 0 0;
+    }
+    .news-tweets {
+        margin: 0;
+    }
+
+
+    .grid-real {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 130px);
+        gap: 10px;
+        grid-template-areas:
+        "rmaint rmaint rmaint rmaint"
+        "bed1 lamp1 flowr cact"
+        "lamp2 sof1 flowr kit1"
+        "lamp2 kit2 bed2 kit3"
+        "liv1 sofa2 liv2 kit3"
+        "offi1 sofa2 chair offi2"
+        "n-ttitle n-ttitle n-titletw n-titletw"
+        "n-testi n-testi n-tweet n-tweet"
+        "n-testi n-testi n-tweet n-tweet"
+        "n-testi n-testi n-tweet n-tweet";
+        margin: 0 50px;
+    }
+    .news-testimony-flex {
+        margin: 0;
+    }
+    .news-tweets-title {
+        margin-top: 50px;
+    }
+
+    .container {
+        width: 780px;
+        margin: 0 auto 150px auto;
+    }
+}
+
+@media (max-width: 780px) and (min-width: 631px) {
+    .header-bigbox {
+        flex-direction: column;
+    }
+    .header-boxleft {
+        margin: 20px auto;
+    }
+    .header-boxright ul {
+        justify-content: space-around;
+    }
+    .grid-home {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "."
+        "mid-title"
+        "mid-box1"
+        "mid-box2"
+        "mid-box3"
+        "mid-box4"
+        "bot-title"
+        "bot-box1"
+        "bot-box2"
+        "bot-box3"
+        "bot-box4"
+        ".";
+    }
+
+    .grid-news {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 400px 300px 100px 450px 300px 100px 400px 50px 100px;
+        gap: 20px;
+        grid-template-areas:
+        "n-maintitle"
+        "n-mtitle1"
+        "n-img1"
+        "n-desc1"
+        "n-mtitle2"
+        "n-img2"
+        "n-desc2"
+        "n-ttitle"
+        "n-testi"
+        "n-titletw"
+        "n-tweet";
+    }
+    .news-tweets {
+        margin: 0;
+    }
+
+    .news-testimony-flex {
+        margin: 0;
+    }
+
+    .grid-real {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(17, 130px);
+        gap: 10px;
+        grid-template-areas:
+        "rmaint rmaint"
+        "bed1 lamp1"
+        "flowr cact"
+        "flow lamp2"
+        "sof1 lamp2"
+        "kit1 kit2"
+        "bed2 kit3"
+        "liv1 kit3"
+        "sofa2 liv2"
+        "sofa2 offi1"
+        "chair offi2"
+        "n-ttitle n-ttitle"
+        "n-testi n-testi"
+        "n-testi n-testi"
+        "n-testi n-testi"
+        "n-titletw n-titletw"
+        "n-tweet n-tweet"
+        "n-tweet n-tweet"
+        "n-tweet n-tweet";
+        margin: 0 50px;
+    }
+
+    .container {
+        width: 630px;
+        margin: 0 auto 100px auto;
+    }
+    .footer-bigbox {
+        margin-top: 300px;
+    }
+    .real-footer-bigbox {
+        margin-top: 0px;
+    }
+    .footer-boxleft {
+        order: 2;
+    }
+    .footer-boxright {
+        order: 1;
+    }
+}
+
+@media (max-width: 630px) {
+    .header-bigbox {
+        flex-direction: column;
+    }
+    .header-boxleft {
+        margin: 20px auto;
+    }
+    .header-boxright ul {
+        flex-direction: column;
+    }
+    .header-boxright li {
+        text-align: center;
+    }
+    .header-boxright a {
+        display: block;
+    }
+    .grid-home {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "mid-title"
+        "mid-box1"
+        "mid-box2"
+        "mid-box3"
+        "mid-box4"
+        "bot-title"
+        "bot-box1"
+        "bot-box2"
+        "bot-box3"
+        "bot-box4";
+    }
+
+    .grid-news {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 400px 300px 100px 450px 300px 100px 400px 50px 100px;
+        gap: 20px;
+        grid-template-areas:
+        "n-maintitle"
+        "n-mtitle1"
+        "n-img1"
+        "n-desc1"
+        "n-mtitle2"
+        "n-img2"
+        "n-desc2"
+        "n-ttitle"
+        "n-testi"
+        "n-titletw"
+        "n-tweet";
+    }
+    .news-tweets {
+        margin: 0;
+    }
+
+    .grid-real {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(17, 130px);
+        gap: 10px;
+        grid-template-areas:
+        "rmaint rmaint"
+        "bed1 lamp1"
+        "flowr cact"
+        "flow lamp2"
+        "sof1 lamp2"
+        "kit1 kit2"
+        "bed2 kit3"
+        "liv1 kit3"
+        "sofa2 liv2"
+        "sofa2 offi1"
+        "chair offi2"
+        "n-ttitle n-ttitle"
+        "n-testi n-testi"
+        "n-testi n-testi"
+        "n-testi n-testi"
+        "n-titletw n-titletw"
+        "n-tweet n-tweet"
+        "n-tweet n-tweet"
+        "n-tweet n-tweet";
+        margin: 0 50px;
+    }
+
+    .container {
+        width: 600px;
+        margin: 0 auto 80px auto;
+    }
+    .footer-bigbox {
+        margin-top: 300px;
+    }
+    .real-footer-bigbox {
+        margin-top: 0px;
+    }
+    .footer-boxleft {
+        order: 2;
+    }
+    .footer-boxright {
+        order: 1;
+    }
+}
